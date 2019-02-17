@@ -1,0 +1,15 @@
+<html lang="en">
+<head>
+    <title>{{url}}</title>
+</head>
+<body bgcolor="white">
+<center><h1>Redirecting...</h1></center>
+<hr>
+<center>Click <a href="{{url}}">here</a> if you won't get redirected.</center>
+<script>
+    window.onload = function () {
+        window.location.href = '{{url}}'
+    }
+</script>
+</body>
+</html>
