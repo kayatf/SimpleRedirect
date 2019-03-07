@@ -43,7 +43,7 @@ public class SimpleRedirect {
 
         instance = this;
 
-        if (StringUtil.isEmpty(args[0]) || StringUtil.isEmpty(args[1])) {
+        if (args.length != 2 || StringUtil.isEmpty(args[0]) || StringUtil.isEmpty(args[1])) {
             System.err.println("Please provide a mongodb connection-uri as your first parameter and an application-port as your second.");
             System.exit(-1);
             return;
